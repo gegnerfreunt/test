@@ -52,7 +52,7 @@
   var bgMark = document.querySelector(".bg-wordmark");
   var fadeTarget = document.querySelector(".statement") || document.querySelector(".site-footer");
   if (bgMark && fadeTarget && "IntersectionObserver" in window) {
-    var baseOpacity = 0.55;
+    var baseOpacity = 1;
     var sentinel = document.createElement("div");
     sentinel.style.cssText =
       "position:absolute;top:0;left:0;width:1px;height:60vh;pointer-events:none;visibility:hidden;";

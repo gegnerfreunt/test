@@ -87,14 +87,14 @@ a {
   width: min(98vw, 150rem);
   z-index: 0;
   pointer-events: none;
-  opacity: 0.55;
+  opacity: 1;
   transition: opacity 0.2s linear;
 }
 
 .bg-wordmark img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 1.8rem 2.6rem rgba(31, 34, 42, 0.5)) drop-shadow(0 0.35rem 0.8rem rgba(31, 34, 42, 0.3));
+  filter: drop-shadow(0 0.7rem 1rem rgba(31, 34, 42, 0.35)) drop-shadow(0 0.15rem 0.3rem rgba(31, 34, 42, 0.2));
 }
 
 main,
