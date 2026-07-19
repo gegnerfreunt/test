@@ -94,7 +94,7 @@ a {
 .bg-wordmark img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(0.8rem 0.8rem 0.3rem rgba(31, 34, 42, 0.28));
+  filter: drop-shadow(0.35rem 0.35rem 0.25rem rgba(31, 34, 42, 0.16));
 }
 
 main,
