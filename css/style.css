@@ -127,12 +127,37 @@ main,
 .site-header__logo {
   display: flex;
   align-items: center;
+  gap: 0.45rem;
   min-width: 0;
+  color: var(--white);
 }
 
 .site-header__logo img {
   height: 1.5rem;
   width: auto;
+}
+
+.logo-aperture {
+  height: 1.5rem;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.logo-aperture .blade {
+  transform-box: view-box;
+  transition: transform 0.5s var(--easing);
+}
+
+.site-header__logo:hover .logo-aperture .blade,
+.site-header__logo:focus-visible .logo-aperture .blade {
+  transform: rotate(30deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-aperture .blade {
+    transition: none;
+  }
 }
 
 .site-nav {
