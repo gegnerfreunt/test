@@ -144,18 +144,25 @@ main,
   flex-shrink: 0;
 }
 
-.logo-aperture .blade {
+.logo-aperture .blade,
+.logo-aperture .iris {
   transform-box: view-box;
   transition: transform 0.5s var(--easing);
 }
 
 .site-header__logo:hover .logo-aperture .blade,
 .site-header__logo:focus-visible .logo-aperture .blade {
-  transform: rotate(30deg);
+  transform: rotate(28deg);
+}
+
+.site-header__logo:hover .logo-aperture .iris,
+.site-header__logo:focus-visible .logo-aperture .iris {
+  transform: scale(0.001);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .logo-aperture .blade {
+  .logo-aperture .blade,
+  .logo-aperture .iris {
     transition: none;
   }
 }
